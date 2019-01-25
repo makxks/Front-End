@@ -1,0 +1,143 @@
+<h2>Nav</h2>
+
+<hr />
+
+<p>
+  A collection of CSS and Javascript navs and nav effect designs
+</p>
+
+<section id="navs">
+  <h3>Nav Styles</h3>
+
+  <p>Styles can be set for nav-item-standard and nav-item-gradient components with the following @Inputs</p>
+  <ul>
+    <li>[itemname] - string, name of nav item</li>
+    <li>[itemstyle] - string, shape of item - rectangle or parallelogram</li>
+    <li>[colorfadespeed] - string, fade speed of color (text color) - vslow, slow, medium, fast, or vfast</li>
+    <li>[fadetocolortext] - string, color to fade text to - css rgb, hex, or color name string</li>
+    <li>[smooth] - use smooth border-radius or not - true or false</li>
+    <li>[fadespeed]* - string, fade speed of background-color - vslow, slow, medium, fast, or vfast</li>
+  </ul>
+  <p>* only for nav-item-gradient</p>
+
+  <div class="set">
+    <p class="title">nav-item-standard component using @Input [itemstyle] as rectangle with fades and colors with .b2 nav-subitems</p>
+    <div class="nav-set">
+      <!-- angled button with shape overlay -->
+      <nav class="nav nav-rectangle with-subitems">
+        <nav-item-standard [itemname]="'Option 1'" [itemstyle]="'rectangle'" [colorfadespeed]="'vslow'" [fadetocolortext]="'#cacaca'"
+        [subitems]="[
+        {itemname: 'Subitem 1', itemstyle: 'b2 b2-primary background-fade-medium color-fade-medium sub-option', route: 'nav'},
+        {itemname: 'Subitem 2', itemstyle: 'b2 b2-primary background-fade-medium color-fade-medium sub-option', route: 'nav'},
+        {itemname: 'Subitem 3', itemstyle: 'b2 b2-primary background-fade-medium color-fade-medium sub-option', route: 'nav'}
+        ]">
+        </nav-item-standard>
+
+        <nav-item-standard [itemname]="'Option 2'" [itemstyle]="'rectangle'" [colorfadespeed]="'vslow'" [fadetocolortext]="'#cacaca'"
+        [subitems]="[
+        {itemname: 'Subitem 1', itemstyle: 'b2 b2-primary background-fade-medium color-fade-medium sub-option', route: 'nav'},
+        {itemname: 'Subitem 2', itemstyle: 'b2 b2-primary background-fade-medium color-fade-medium sub-option', route: 'nav'},
+        {itemname: 'Subitem 3', itemstyle: 'b2 b2-primary background-fade-medium color-fade-medium sub-option', route: 'nav'}
+        ]">
+        </nav-item-standard>
+
+        <nav-item-standard [itemname]="'Option 3'" [itemstyle]="'rectangle'" [colorfadespeed]="'vslow'" [fadetocolortext]="'#cacaca'"
+        [subitems]="[
+        {itemname: 'Subitem 1', itemstyle: 'b2 b2-primary background-fade-medium color-fade-medium sub-option', route: 'nav'},
+        {itemname: 'Subitem 2', itemstyle: 'b2 b2-primary background-fade-medium color-fade-medium sub-option', route: 'nav'},
+        {itemname: 'Subitem 3', itemstyle: 'b2 b2-primary background-fade-medium color-fade-medium sub-option', route: 'nav'}
+        ]">
+        </nav-item-standard>
+      </nav>
+    </div>
+  </div>
+
+  <div class="set">
+    <p class="title">nav-item-standard component using @Input [itemstyle] as parallelogram with fades and colors</p>
+    <div class="nav-set">
+      <nav class="nav nav-parallelogram">
+        <!-- angled button with shape overlay -->
+        <nav-item-standard [itemname]="'Option 1'" [itemstyle]="'parallelogram'" [colorfadespeed]="'vslow'" [fadetocolortext]="'#cacaca'"></nav-item-standard>
+
+        <nav-item-standard [itemname]="'Option 2'" [itemstyle]="'parallelogram'" [colorfadespeed]="'vslow'" [fadetocolortext]="'#cacaca'"></nav-item-standard>
+
+        <nav-item-standard [itemname]="'Option 3'" [itemstyle]="'parallelogram'" [colorfadespeed]="'vslow'" [fadetocolortext]="'#cacaca'"></nav-item-standard>
+      </nav>
+    </div>
+  </div>
+
+  <div class="set">
+    <p class="title">nav-item-gradient component using @Input [itemstyle] as rectangle with fades, colors, and border-radius</p>
+    <div class="nav-set">
+      <nav class="nav nav-rectangle">
+        <!-- angled button with shape overlay -->
+        <nav-item-gradient [itemname]="'Option 1'" [itemstyle]="'rectangle'" [fadespeed]="'slow'" [colorfadespeed]="'vslow'" [fadetocolortext]="'#4a4a4a'" [smooth]="true"></nav-item-gradient>
+
+        <nav-item-gradient [itemname]="'Option 2'" [itemstyle]="'rectangle'" [fadespeed]="'slow'" [colorfadespeed]="'vslow'" [fadetocolortext]="'#4a4a4a'" [smooth]="true"></nav-item-gradient>
+
+        <nav-item-gradient [itemname]="'Option 3'" [itemstyle]="'rectangle'" [fadespeed]="'slow'" [colorfadespeed]="'vslow'" [fadetocolortext]="'#4a4a4a'" [smooth]="true"></nav-item-gradient>
+      </nav>
+    </div>
+  </div>
+
+  <div class="set">
+    <p class="title">nav-item-button component using @Input [itemstyle] as rectangle with .b4 nav-subitems</p>
+    <div class="nav-set">
+      <!-- angled button with shape overlay -->
+      <nav class="nav nav-rectangle with-subitems">
+        <nav-item-button [itemname]="'Option 1'"
+        [subitems]="[
+        {itemname: 'Subitem 1', itemstyle: 'b4 b4-primary border-box-shadow-moveable-medium sub-option', route: 'nav'},
+        {itemname: 'Subitem 2', itemstyle: 'b4 b4-primary border-box-shadow-moveable-medium sub-option', route: 'nav'},
+        {itemname: 'Subitem 3', itemstyle: 'b4 b4-primary border-box-shadow-moveable-medium sub-option', route: 'nav'}
+        ]">
+        </nav-item-button>
+
+        <nav-item-button [itemname]="'Option 2'"
+        [subitems]="[
+        {itemname: 'Subitem 1', itemstyle: 'b4 b4-primary border-box-shadow-moveable-medium sub-option', route: 'nav'},
+        {itemname: 'Subitem 2', itemstyle: 'b4 b4-primary border-box-shadow-moveable-medium sub-option', route: 'nav'},
+        {itemname: 'Subitem 3', itemstyle: 'b4 b4-primary border-box-shadow-moveable-medium sub-option', route: 'nav'}
+        ]">
+        </nav-item-button>
+
+        <nav-item-button [itemname]="'Option 3'"
+        [subitems]="[
+        {itemname: 'Subitem 1', itemstyle: 'b4 b4-primary border-box-shadow-moveable-medium sub-option', route: 'nav'},
+        {itemname: 'Subitem 2', itemstyle: 'b4 b4-primary border-box-shadow-moveable-medium sub-option', route: 'nav'},
+        {itemname: 'Subitem 3', itemstyle: 'b4 b4-primary border-box-shadow-moveable-medium sub-option', route: 'nav'}
+        ]">
+        </nav-item-button>
+      </nav>
+    </div>
+  </div>
+
+  <div class="set">
+    <p class="title">nav-vertical with nav-vertical-item and .b4 nav-vertical-subitems</p>
+    <div class="nav-set">
+      <nav class="nav-vertical">
+        <nav-vertical-item [itemname]="'Option 1'" [itemstyle]="'b4 b4-primary border-box-shadow-moveable-medium'"
+        [subitems]="[
+        {itemname: 'Subitem 1', itemstyle: 'b4 b4-primary border-box-shadow-moveable-medium sub-option', route: 'nav'},
+        {itemname: 'Subitem 2', itemstyle: 'b4 b4-primary border-box-shadow-moveable-medium sub-option', route: 'nav'},
+        {itemname: 'Subitem 3', itemstyle: 'b4 b4-primary border-box-shadow-moveable-medium sub-option', route: 'nav'}
+        ]">
+        </nav-vertical-item>
+        <nav-vertical-item [itemname]="'Option 2'" [itemstyle]="'b4 b4-primary border-box-shadow-moveable-medium'"
+        [subitems]="[
+        {itemname: 'Subitem 1', itemstyle: 'b4 b4-primary border-box-shadow-moveable-medium sub-option', route: 'nav'},
+        {itemname: 'Subitem 2', itemstyle: 'b4 b4-primary border-box-shadow-moveable-medium sub-option', route: 'nav'},
+        {itemname: 'Subitem 3', itemstyle: 'b4 b4-primary border-box-shadow-moveable-medium sub-option', route: 'nav'}
+        ]">
+        </nav-vertical-item>
+        <nav-vertical-item [itemname]="'Option 3'" [itemstyle]="'b4 b4-primary border-box-shadow-moveable-medium'"
+        [subitems]="[
+        {itemname: 'Subitem 1', itemstyle: 'b4 b4-primary border-box-shadow-moveable-medium sub-option', route: 'nav'},
+        {itemname: 'Subitem 2', itemstyle: 'b4 b4-primary border-box-shadow-moveable-medium sub-option', route: 'nav'},
+        {itemname: 'Subitem 3', itemstyle: 'b4 b4-primary border-box-shadow-moveable-medium sub-option', route: 'nav'}
+        ]">
+        </nav-vertical-item>
+      </nav>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,6 @@
+<button [ngClass]="itemstyle" (mouseenter)="mouseOverVerticalSubsMove($event)" (mouseleave)="mouseLeaveVerticalSubsMove($event)">
+  {{itemname}}
+  <div>
+    <nav-vertical-subitem *ngFor="let subitem of subitems" [itemname]="subitem.itemname" [itemstyle]="subitem.itemstyle" [route]="subitem.route"></nav-vertical-subitem>
+  </div>
+</button>

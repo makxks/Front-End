@@ -1,0 +1,280 @@
+/* general animateable styles */
+.margin-moveable-opacity-vfast {
+        transition: margin 0.2s, opacity 0.3s;
+-webkit-transition: margin 0.2s, opacity 0.3s;
+   -moz-transition: margin 0.2s, opacity 0.3s;
+     -o-transition: margin 0.2s, opacity 0.3s;
+}
+
+.margin-moveable-opacity-fast {
+        transition: margin 0.4s, opacity 0.6s;
+-webkit-transition: margin 0.4s, opacity 0.6s;
+   -moz-transition: margin 0.4s, opacity 0.6s;
+     -o-transition: margin 0.4s, opacity 0.6s;
+}
+
+.margin-moveable-opacity-medium {
+        transition: margin 0.6s, opacity 0.9s;
+-webkit-transition: margin 0.6s, opacity 0.9s;
+   -moz-transition: margin 0.6s, opacity 0.9s;
+     -o-transition: margin 0.6s, opacity 0.9s;
+}
+
+.margin-moveable-opacity-slow {
+        transition: margin 0.8s, opacity 1.2s;
+-webkit-transition: margin 0.8s, opacity 1.2s;
+   -moz-transition: margin 0.8s, opacity 1.2s;
+     -o-transition: margin 0.8s, opacity 1.2s;
+}
+
+.margin-moveable-opacity-vslow {
+        transition: margin 1s, opacity 1.5s;
+-webkit-transition: margin 1s, opacity 1.5s;
+   -moz-transition: margin 1s, opacity 1.5s;
+     -o-transition: margin 1s, opacity 1.5s;
+}
+
+.border-color-vslow {
+        transition: border-color 0.2s;
+-webkit-transition: border-color 0.2s;
+   -moz-transition: border-color 0.2s;
+     -o-transition: border-color 0.2s;
+}
+
+.border-color-slow {
+        transition: border-color 0.4s;
+-webkit-transition: border-color 0.4s;
+   -moz-transition: border-color 0.4s;
+     -o-transition: border-color 0.4s;
+}
+
+.border-color-medium {
+        transition: border-color 0.6s;
+-webkit-transition: border-color 0.6s;
+   -moz-transition: border-color 0.6s;
+     -o-transition: border-color 0.6s;
+}
+
+.border-color-fast {
+        transition: border-color 0.8s;
+-webkit-transition: border-color 0.8s;
+   -moz-transition: border-color 0.8s;
+     -o-transition: border-color 0.8s;
+}
+
+.border-color-vfast {
+        transition: border-color 1s;
+-webkit-transition: border-color 1s;
+   -moz-transition: border-color 1s;
+     -o-transition: border-color 1s;
+}
+
+.border-box-shadow-vfast {
+        transition: box-shadow 0.2s, border-color 0.2s;
+-webkit-transition: box-shadow 0.2s, border-color 0.2s;
+   -moz-transition: box-shadow 0.2s, border-color 0.2s;
+     -o-transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.border-box-shadow-fast {
+        transition: box-shadow 0.4s, border-color 0.4s;
+-webkit-transition: box-shadow 0.4s, border-color 0.4s;
+   -moz-transition: box-shadow 0.4s, border-color 0.4s;
+     -o-transition: box-shadow 0.4s, border-color 0.4s;
+}
+
+.border-box-shadow-medium {
+        transition: box-shadow 0.6s, border-color 0.6s;
+-webkit-transition: box-shadow 0.6s, border-color 0.6s;
+   -moz-transition: box-shadow 0.6s, border-color 0.6s;
+     -o-transition: box-shadow 0.6s, border-color 0.6s;
+}
+
+.border-box-shadow-slow {
+        transition: box-shadow 0.8s, border-color 0.8s;
+-webkit-transition: box-shadow 0.8s, border-color 0.8s;
+   -moz-transition: box-shadow 0.8s, border-color 0.8s;
+     -o-transition: box-shadow 0.8s, border-color 0.8s;
+}
+
+.border-box-shadow-vslow {
+        transition: box-shadow 1s, border-color 1s;
+-webkit-transition: box-shadow 1s, border-color 1s;
+   -moz-transition: box-shadow 1s, border-color 1s;
+     -o-transition: box-shadow 1s, border-color 1s;
+}
+
+.border-box-shadow-moveable-vfast {
+        transition: box-shadow 0.2s, border-color 0.2s, top 0.2s, bottom 0.2s, left 0.2s, right 0.2s;
+-webkit-transition: box-shadow 0.2s, border-color 0.2s, top 0.2s, bottom 0.2s, left 0.2s, right 0.2s;
+   -moz-transition: box-shadow 0.2s, border-color 0.2s, top 0.2s, bottom 0.2s, left 0.2s, right 0.2s;
+     -o-transition: box-shadow 0.2s, border-color 0.2s, top 0.2s, bottom 0.2s, left 0.2s, right 0.2s;
+}
+
+.border-box-shadow-moveable-fast {
+        transition: box-shadow 0.4s, border-color 0.4s, top 0.4s, bottom 0.4s, left 0.4s, right 0.4s;
+-webkit-transition: box-shadow 0.4s, border-color 0.4s, top 0.4s, bottom 0.4s, left 0.4s, right 0.4s;
+   -moz-transition: box-shadow 0.4s, border-color 0.4s, top 0.4s, bottom 0.4s, left 0.4s, right 0.4s;
+     -o-transition: box-shadow 0.4s, border-color 0.4s, top 0.4s, bottom 0.4s, left 0.4s, right 0.4s;
+}
+
+.border-box-shadow-moveable-medium {
+        transition: box-shadow 0.6s, border-color 0.6s, top 0.6s, bottom 0.6s, left 0.6s, right 0.6s;
+-webkit-transition: box-shadow 0.6s, border-color 0.6s, top 0.6s, bottom 0.6s, left 0.6s, right 0.6s;
+   -moz-transition: box-shadow 0.6s, border-color 0.6s, top 0.6s, bottom 0.6s, left 0.6s, right 0.6s;
+     -o-transition: box-shadow 0.6s, border-color 0.6s, top 0.6s, bottom 0.6s, left 0.6s, right 0.6s;
+}
+
+.border-box-shadow-moveable-fast {
+        transition: box-shadow 0.8s, border-color 0.8s, top 0.8s, bottom 0.8s, left 0.8s, right 0.8s;
+-webkit-transition: box-shadow 0.8s, border-color 0.8s, top 0.8s, bottom 0.8s, left 0.8s, right 0.8s;
+   -moz-transition: box-shadow 0.8s, border-color 0.8s, top 0.8s, bottom 0.8s, left 0.8s, right 0.8s;
+     -o-transition: box-shadow 0.8s, border-color 0.8s, top 0.8s, bottom 0.8s, left 0.8s, right 0.8s;
+}
+
+.border-box-shadow-moveable-vfast {
+        transition: box-shadow 1s, border-color 1s, top 1s, bottom 1s, left 1s, right 1s;
+-webkit-transition: box-shadow 1s, border-color 1s, top 1s, bottom 1s, left 1s, right 1s;
+   -moz-transition: box-shadow 1s, border-color 1s, top 1s, bottom 1s, left 1s, right 1s;
+     -o-transition: box-shadow 1s, border-color 1s, top 1s, bottom 1s, left 1s, right 1s;
+}
+
+.color-fade-medium {
+        transition: color 0.6s;
+-webkit-transition: color 0.6s;
+   -moz-transition: color 0.6s;
+     -o-transition: color 0.6s;
+}
+
+.color-fade-slow {
+        transition: color 0.8s;
+-webkit-transition: color 0.8s;
+   -moz-transition: color 0.8s;
+     -o-transition: color 0.8s;
+}
+
+.color-fade-vslow {
+        transition: color 1s;
+-webkit-transition: color 1s;
+   -moz-transition: color 1s;
+     -o-transition: color 1s;
+}
+
+.color-fade-fast {
+        transition: color 0.4s;
+-webkit-transition: color 0.4s;
+   -moz-transition: color 0.4s;
+     -o-transition: color 0.4s;
+}
+
+.color-fade-vfast {
+        transition: color 0.2s;
+-webkit-transition: color 0.2s;
+   -moz-transition: color 0.2s;
+     -o-transition: color 0.2s;
+}
+
+.background-fade-vfast {
+        transition: background-color 0.2s;
+-webkit-transition: background-color 0.2s;
+   -moz-transition: background-color 0.2s;
+     -o-transition: background-color 0.2s;
+}
+
+.background-fade-fast {
+        transition: background-color 0.4s;
+-webkit-transition: background-color 0.4s;
+   -moz-transition: background-color 0.4s;
+     -o-transition: background-color 0.4s;
+}
+
+.background-fade-medium {
+        transition: background-color 0.6s;
+-webkit-transition: background-color 0.6s;
+   -moz-transition: background-color 0.6s;
+     -o-transition: background-color 0.6s;
+}
+
+.background-fade-slow {
+        transition: background-color 0.8s;
+-webkit-transition: background-color 0.8s;
+   -moz-transition: background-color 0.8s;
+     -o-transition: background-color 0.8s;
+}
+
+.background-fade-vslow {
+        transition: background-color 1s;
+-webkit-transition: background-color 1s;
+   -moz-transition: background-color 1s;
+     -o-transition: background-color 1s;
+}
+
+.fadeable-vfast {
+          transition: opacity 0.2s;
+  -webkit-transition: opacity 0.2s;
+     -moz-transition: opacity 0.2s;
+       -o-transition: opacity 0.2s;
+}
+
+.fadeable-fast {
+          transition: opacity 0.4s;
+  -webkit-transition: opacity 0.4s;
+     -moz-transition: opacity 0.4s;
+       -o-transition: opacity 0.4s;
+}
+
+.fadeable-medium {
+          transition: opacity 0.6s;
+  -webkit-transition: opacity 0.6s;
+     -moz-transition: opacity 0.6s;
+       -o-transition: opacity 0.6s;
+}
+
+.fadeable-slow {
+          transition: opacity 0.8s;
+  -webkit-transition: opacity 0.8s;
+     -moz-transition: opacity 0.8s;
+       -o-transition: opacity 0.8s;
+}
+
+.fadeable-vslow {
+          transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+     -moz-transition: opacity 1s;
+       -o-transition: opacity 1s;
+}
+
+.moveable-vslow {
+          transition: top 1s, bottom 1s, left 1s, right 1s;
+  -webkit-transition: top 1s, bottom 1s, left 1s, right 1s;
+     -moz-transition: top 1s, bottom 1s, left 1s, right 1s;
+       -o-transition: top 1s, bottom 1s, left 1s, right 1s;
+}
+
+.moveable-slow {
+          transition: top 0.8s, bottom 0.8s, left 0.8s, right 0.8s;
+  -webkit-transition: top 0.8s, bottom 0.8s, left 0.8s, right 0.8s;
+     -moz-transition: top 0.8s, bottom 0.8s, left 0.8s, right 0.8s;
+       -o-transition: top 0.8s, bottom 0.8s, left 0.8s, right 0.8s;
+}
+
+.moveable-medium {
+          transition: top 0.6s, bottom 0.6s, left 0.6s, right 0.6s;
+  -webkit-transition: top 0.6s, bottom 0.6s, left 0.6s, right 0.6s;
+     -moz-transition: top 0.6s, bottom 0.6s, left 0.6s, right 0.6s;
+       -o-transition: top 0.6s, bottom 0.6s, left 0.6s, right 0.6s;
+}
+
+.moveable-fast {
+          transition: top 0.4s, bottom 0.4s, left 0.4s, right 0.4s;
+  -webkit-transition: top 0.4s, bottom 0.4s, left 0.4s, right 0.4s;
+     -moz-transition: top 0.4s, bottom 0.4s, left 0.4s, right 0.4s;
+       -o-transition: top 0.4s, bottom 0.4s, left 0.4s, right 0.4s;
+}
+
+.moveable-vfast {
+          transition: top 0.2s, bottom 0.2s, left 0.2s, right 0.2s;
+  -webkit-transition: top 0.2s, bottom 0.2s, left 0.2s, right 0.2s;
+     -moz-transition: top 0.2s, bottom 0.2s, left 0.2s, right 0.2s;
+       -o-transition: top 0.2s, bottom 0.2s, left 0.2s, right 0.2s;
+}

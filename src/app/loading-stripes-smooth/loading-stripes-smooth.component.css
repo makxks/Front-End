@@ -1,0 +1,136 @@
+.loading-stripes {
+  clear: both;
+  width: 10%;
+  margin-left: 45%;
+  padding: 10px;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.loading-stripes .loading-stripe-smooth {
+  height: 7px;
+  width: 7px;
+  padding: 5%;
+  border-radius: 50%;
+  background-color: #555;
+}
+
+
+.stripe1 {
+  animation: stripe1anim 2s infinite ease-in-out;
+}
+
+.stripe2 {
+  animation: stripe2anim 2s infinite ease-in-out;
+}
+
+.stripe3 {
+  animation: stripe3anim 2s infinite ease-in-out;
+}
+
+.stripe4 {
+  animation: stripe4anim 2s infinite ease-in-out;
+}
+
+.stripe5 {
+  animation: stripe5anim 2s infinite ease-in-out;
+}
+
+@keyframes stripe1anim {
+  0% {
+    height: 10%;
+    background-color: #555;
+  }
+  10% {
+    height: 10%;
+    background-color: #555;
+  }
+  30% {
+    height: 100%;
+    background-color: #999;
+  }
+  50% {
+    height: 10%;
+    background-color: #555;
+  }
+}
+
+@keyframes stripe2anim {
+  0% {
+    height: 10%;
+    background-color: #555;
+  }
+  20% {
+    height: 10%;
+    background-color: #555;
+  }
+  40% {
+    height: 100%;
+    background-color: #999;
+  }
+  60% {
+    height: 10%;
+    background-color: #555;
+  }
+}
+
+@keyframes stripe3anim {
+  0% {
+    height: 10%;
+    background-color: #555;
+  }
+  30% {
+    height: 10%;
+    background-color: #555;
+  }
+  50% {
+    height: 100%;
+    background-color: #999;
+  }
+  70% {
+    height: 10%;
+    background-color: #555;
+  }
+}
+
+@keyframes stripe4anim {
+  0% {
+    height: 10%;
+    background-color: #555;
+  }
+  40% {
+    height: 10%;
+    background-color: #555;
+  }
+  60% {
+    height: 100%;
+    background-color: #999;
+  }
+  80% {
+    height: 10%;
+    background-color: #555;
+  }
+}
+
+@keyframes stripe5anim {
+  0% {
+    height: 10%;
+    background-color: #555;
+  }
+  50% {
+    height: 10%;
+    background-color: #555;
+  }
+  70% {
+    height: 100%;
+    background-color: #999;
+  }
+  90% {
+    height: 10%;
+    background-color: #555;
+  }
+}

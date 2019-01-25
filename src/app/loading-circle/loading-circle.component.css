@@ -1,0 +1,60 @@
+.loading-circle-container {
+  clear: both;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.loading-circle1 {
+  width: 70px;
+  height: 70px;
+  border: solid #555 7px;
+  border-radius: 50%;
+  position: absolute;
+  clip-path: polygon(30% 20%, 70% 20%, 80% 0, 20% 0);
+  animation: loading-circle-anim infinite 3s linear;
+}
+
+.loading-circle2 {
+  width: 70px;
+  height: 70px;
+  border: solid #555 10px;
+  border-radius: 50%;
+  position: absolute;
+  clip-path: polygon(35% 20%, 65% 20%, 72% 0, 28% 0);
+  animation: loading-circle-anim infinite 5s linear;
+}
+
+.loading-circle3 {
+  width: 70px;
+  height: 70px;
+  border: solid #555 14px;
+  border-radius: 50%;
+  position: absolute;
+  clip-path: polygon(42% 20%, 58% 20%, 62% 0, 38% 0);
+  animation: loading-circle-anim infinite 2s linear;
+}
+
+.loading-circle4 {
+  width: 70px;
+  height: 70px;
+  border: solid #555 17px;
+  border-radius: 50%;
+  position: absolute;
+  clip-path: polygon(48% 20%, 52% 20%, 53% 0, 47% 0);
+  animation: loading-circle-anim infinite 4s linear;
+}
+
+@keyframes loading-circle-anim {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

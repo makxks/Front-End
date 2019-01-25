@@ -1,0 +1,176 @@
+.loading-bar {
+  clear: both;
+  width: 15%;
+  margin-left: 42.5%;
+  padding: 10px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 5px solid #555;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.loading-bar .loading-marker {
+  width: 11%;
+  height: 90%;
+  background-color: #555;
+  border: 3px solid darkgray;
+  border-radius: 5px;
+}
+
+.marker1 {
+  animation: marker1Anim 5s infinite;
+}
+
+.marker2 {
+  animation: marker2Anim 5s infinite;
+}
+
+.marker3 {
+  animation: marker3Anim 5s infinite;
+}
+
+.marker4 {
+  animation: marker4Anim 5s infinite;
+}
+
+.marker5 {
+  animation: marker5Anim 5s infinite;
+}
+
+.marker6 {
+  animation: marker6Anim 5s infinite;
+}
+
+@keyframes marker1Anim {
+  0% {
+    background-color: #fafafa;
+    border-color: #fafafa;
+  }
+  15% {
+    background-color: #555;
+    border-color: #555;
+  }
+  90% {
+    background-color: #555;
+    border-color: #555;
+  }
+  100% {
+    background-color: #fafafa;
+    border-color: #fafafa;
+  }
+}
+
+@keyframes marker2Anim {
+  0% {
+    background-color: #fafafa;
+    border-color: #fafafa;
+  }
+  15% {
+    background-color: #fafafa;
+    border-color: #fafafa;
+  }
+  30% {
+    background-color: #555;
+    border-color: #555;
+  }
+  90% {
+    background-color: #555;
+    border-color: #555;
+  }
+  100% {
+    background-color: #fafafa;
+    border-color: #fafafa;
+  }
+}
+
+@keyframes marker3Anim {
+  0% {
+    background-color: #fafafa;
+    border-color: #fafafa;
+  }
+  30% {
+    background-color: #fafafa;
+    border-color: #fafafa;
+  }
+  45% {
+    background-color: #555;
+    border-color: #555;
+  }
+  90% {
+    background-color: #555;
+    border-color: #555;
+  }
+  100% {
+    background-color: #fafafa;
+    border-color: #fafafa;
+  }
+}
+
+@keyframes marker4Anim {
+  0% {
+    background-color: #fafafa;
+    border-color: #fafafa;
+  }
+  45% {
+    background-color: #fafafa;
+    border-color: #fafafa;
+  }
+  60% {
+    background-color: #555;
+    border-color: #555;
+  }
+  90% {
+    background-color: #555;
+    border-color: #555;
+  }
+  100% {
+    background-color: #fafafa;
+    border-color: #fafafa;
+  }
+}
+
+@keyframes marker5Anim {
+  0% {
+    background-color: #fafafa;
+    border-color: #fafafa;
+  }
+  60% {
+    background-color: #fafafa;
+    border-color: #fafafa;
+  }
+  75% {
+    background-color: #555;
+    border-color: #555;
+  }
+  90% {
+    background-color: #555;
+    border-color: #555;
+  }
+  100% {
+    background-color: #fafafa;
+    border-color: #fafafa;
+  }
+}
+
+@keyframes marker6Anim {
+  0% {
+    background-color: #fafafa;
+    border-color: #fafafa;
+  }
+  75% {
+    background-color: #fafafa;
+    border-color: #fafafa;
+  }
+  90% {
+    background-color: #555;
+    border-color: #555;
+  }
+  100% {
+    background-color: #fafafa;
+    border-color: #fafafa;
+  }
+}

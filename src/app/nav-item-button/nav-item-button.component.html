@@ -1,0 +1,9 @@
+<div class="nav-container">
+  <button class="b4 b4-primary border-box-shadow-moveable-medium" (mouseenter)="mouseOverNavFade($event)" (mouseleave)="mouseOutNavFade($event)">
+    <h2 class="nav-name">{{itemname}}</h2>
+
+    <div class="subitems margin-moveable-opacity-medium" *ngIf="subitems.length > 0">
+      <nav-subitem *ngFor="let subitem of subitems" [itemname]="subitem.itemname" [itemstyle]="subitem.itemstyle" [route]="subitem.route"></nav-subitem>
+    </div>
+  </button>
+</div>

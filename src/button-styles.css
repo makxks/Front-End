@@ -1,0 +1,288 @@
+/* button styles */
+
+.b1 {
+  border: 0;
+  border-radius: 1em;
+  position: relative;
+  top: -2px;
+  left: -2px;
+}
+
+.b1:active {
+  top:0;
+  left:0;
+  box-shadow: 0 0 0 0;
+  position: relative;
+}
+
+.b2 {
+  border: 3px solid;
+  border-radius: 1em;
+  background-color: #fafafa;
+}
+
+.b3 {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 1em;
+}
+
+.b4 {
+  border: 3px solid #fafafa;
+  border-radius: 1em;
+}
+
+.b-shadow {
+  box-shadow: 4px 4px 0 0 rgba(0,0,0,0.3);
+}
+
+.b1-primary {
+  background-color: #3567af;
+  color: #fafafa;
+}
+
+.b1-primary:hover {
+  background-color: #25579f;
+}
+
+.b1-secondary {
+  background-color: #67af35;
+  color: #fafafa;
+}
+
+.b1-secondary:hover {
+  background-color: #579f25;
+}
+
+.b1-cancel {
+  background-color: #a22727;
+  color: #fafafa;
+}
+
+.b1-cancel:hover {
+  background-color: #921717;
+}
+
+.b1-neutral {
+  background-color: #ddd;
+  color: #353535;
+}
+
+.b1-neutral:hover {
+  background-color: #ccc;
+}
+
+.b2-primary {
+  border-color: #3567af;
+  color: #3567af;
+}
+
+.b2-primary:hover {
+  background-color: #3567af;
+  color: #fafafa;
+}
+
+.b2-primary:active {
+  border-color: #25579f;
+  background-color: #25579f;
+}
+
+.b2-secondary {
+  border-color: #67af35;
+  color: #67af35;
+}
+
+.b2-secondary:hover {
+  background-color: #67af35;
+  color: #fafafa;
+}
+
+.b2-secondary:active {
+  border-color: #579f25;
+  background-color: #579f25;
+}
+
+.b2-cancel {
+  border-color: #a22727;
+  color: #a22727;
+}
+
+.b2-cancel:hover {
+  background-color: #a22727;
+  color: #fafafa;
+}
+
+.b2-cancel:active {
+  border-color: #921717;
+  background-color: #921717;
+}
+
+.b2-neutral {
+  border-color: #999;
+  color: #999;
+}
+
+.b2-neutral:hover {
+  background-color: #999;
+  color: #fafafa;
+}
+
+.b2-neutral:active {
+  background-color: #888;
+  border-color: #888;
+}
+
+.b3-primary {
+  -moz-box-shadow:    inset 0 0 5px #3567af, 0 0 5px #3567af;
+  -webkit-box-shadow: inset 0 0 5px #3567af, 0 0 5px #3567af;
+  box-shadow:         inset 0 0 5px #3567af, 0 0 5px #3567af;
+  border: 2px solid #fafafa;
+  color: #3567af;
+}
+
+.b3-primary:hover {
+  -moz-box-shadow:    inset 0 0 11px #3567af, 0 0 11px #3567af;
+  -webkit-box-shadow: inset 0 0 11px #3567af, 0 0 11px #3567af;
+  box-shadow:         inset 0 0 11px #3567af, 0 0 11px #3567af;
+}
+
+.b3-primary:active {
+  -moz-box-shadow:    inset 0 0 9px #5587cf, 0 0 9px #5587cf;
+  -webkit-box-shadow: inset 0 0 9px #5587cf, 0 0 9px #5587cf;
+  box-shadow:         inset 0 0 9px #5587cf, 0 0 9px #5587cf;
+  color: #5587cf;
+}
+
+.b3-secondary {
+  -moz-box-shadow:    inset 0 0 5px #67af35, 0 0 5px #67af35;
+  -webkit-box-shadow: inset 0 0 5px #67af35, 0 0 5px #67af35;
+  box-shadow:         inset 0 0 5px #67af35, 0 0 5px #67af35;
+  border: 2px solid #fafafa;
+  color: #67af35;
+}
+
+.b3-secondary:hover {
+  -moz-box-shadow:    inset 0 0 11px #67af35, 0 0 11px #67af35;
+  -webkit-box-shadow: inset 0 0 11px #67af35, 0 0 11px #67af35;
+  box-shadow:         inset 0 0 11px #67af35, 0 0 11px #67af35;
+}
+
+.b3-secondary:active {
+  -moz-box-shadow:    inset 0 0 9px #87cf55, 0 0 9px #87cf55;
+  -webkit-box-shadow: inset 0 0 9px #87cf55, 0 0 9px #87cf55;
+  box-shadow:         inset 0 0 9px #87cf55, 0 0 9px #87cf55;
+  color: #87cf55;
+}
+
+.b3-cancel {
+  -moz-box-shadow:    inset 0 0 5px #a22727, 0 0 5px #a22727;
+  -webkit-box-shadow: inset 0 0 5px #a22727, 0 0 5px #a22727;
+  box-shadow:         inset 0 0 5px #a22727, 0 0 5px #a22727;
+  border: 2px solid #fafafa;
+  color: #a22727;
+}
+
+.b3-cancel:hover {
+  -moz-box-shadow:    inset 0 0 11px #a22727, 0 0 11px #a22727;
+  -webkit-box-shadow: inset 0 0 11px #a22727, 0 0 11px #a22727;
+  box-shadow:         inset 0 0 11px #a22727, 0 0 11px #a22727;
+}
+
+.b3-cancel:active {
+  -moz-box-shadow:    inset 0 0 9px #c24747, 0 0 9px #c24747;
+  -webkit-box-shadow: inset 0 0 9px #c24747, 0 0 9px #c24747;
+  box-shadow:         inset 0 0 9px #c24747, 0 0 9px #c24747;
+  color: #c24747;
+}
+
+.b3-neutral {
+  -moz-box-shadow:    inset 0 0 5px #999, 0 0 5px #999;
+  -webkit-box-shadow: inset 0 0 5px #999, 0 0 5px #999;
+  box-shadow:         inset 0 0 5px #999, 0 0 5px #999;
+  border: 2px solid #fafafa;
+  color: #999;
+}
+
+.b3-neutral:hover {
+  -moz-box-shadow:    inset 0 0 11px #999, 0 0 11px #999;
+  -webkit-box-shadow: inset 0 0 11px #999, 0 0 11px #999;
+  box-shadow:         inset 0 0 11px #999, 0 0 11px #999;
+}
+
+.b3-neutral:active {
+  -moz-box-shadow:    inset 0 0 9px #bbb, 0 0 9px #bbb;
+  -webkit-box-shadow: inset 0 0 9px #bbb, 0 0 9px #bbb;
+  box-shadow:         inset 0 0 9px #bbb, 0 0 9px #bbb;
+  color: #bbb;
+}
+
+.b4-primary {
+  background-color: #3567af;
+  color: #fafafa;
+  -moz-box-shadow:    0 0 11px #3567af;
+  -webkit-box-shadow: 0 0 11px #3567af;
+  box-shadow:         0 0 11px #3567af;
+}
+
+.b4-primary:hover {
+  border-color: #3567af;
+}
+
+.b4-primary:active {
+  -moz-box-shadow:    none;
+  -webkit-box-shadow: none;
+  box-shadow:         none;
+}
+
+.b4-secondary {
+  background-color: #67af35;
+  color: #fafafa;
+  -moz-box-shadow:    0 0 11px #67af35;
+  -webkit-box-shadow: 0 0 11px #67af35;
+  box-shadow:         0 0 11px #67af35;
+}
+
+.b4-secondary:hover {
+  border-color: #67af35;
+}
+
+.b4-secondary:active {
+  -moz-box-shadow:    none;
+  -webkit-box-shadow: none;
+  box-shadow:         none;
+}
+
+.b4-cancel {
+  background-color: #a22727;
+  color: #fafafa;
+  -moz-box-shadow:    0 0 11px #a22727;
+  -webkit-box-shadow: 0 0 11px #a22727;
+  box-shadow:         0 0 11px #a22727;
+}
+
+.b4-cancel:hover {
+  border-color: #a22727;
+}
+
+.b4-cancel:active {
+  -moz-box-shadow:    none;
+  -webkit-box-shadow: none;
+  box-shadow:         none;
+}
+
+.b4-neutral {
+  background-color: #999;
+  color: #fafafa;
+  -moz-box-shadow:    0 0 11px #999;
+  -webkit-box-shadow: 0 0 11px #999;
+  box-shadow:         0 0 11px #999;
+}
+
+.b4-neutral:hover {
+  border-color: #999;
+}
+
+.b4-neutral:active {
+  -moz-box-shadow:    none;
+  -webkit-box-shadow: none;
+  box-shadow:         none;
+}

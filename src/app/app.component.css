@@ -1,0 +1,16 @@
+#app {
+  text-align: center;
+  width: 100%;
+}
+
+.section-container {
+  width: 70%;
+  margin-left: 15%;
+  position: relative;
+}
+
+hr {
+  width: 80%;
+  opacity: 0.5;
+  margin-bottom: 2em;
+}

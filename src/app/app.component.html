@@ -1,0 +1,7 @@
+<div id="app">
+  <app-header></app-header>
+
+  <section class="section-container" [@routeAnimations]="prepareRoute(outlet)">
+    <router-outlet #outlet="outlet"></router-outlet>
+  </section>
+</div>

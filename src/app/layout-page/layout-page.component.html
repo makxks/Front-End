@@ -1,0 +1,89 @@
+<h2>Layout</h2>
+
+<hr />
+
+<p>
+  A set of CSS layout classes to define widths floats and spacing
+</p>
+
+<section id="layouts">
+  <h3>Layout Styles</h3>
+  <p>Layouts are based on 30 equal columns so that many different layouts can be accommodated, these can be used differently for 5 different screen sizes. A few other classes such as "*-qu" for quarter widths, "off-*" for offsets, and some float classes can be used for more precise positioning. These styles are built using flexbox and can be adjusted and changed using the same approach. </p>
+  <p>Some useful class definitions</p>
+  <ul>
+    <li>.container - container for layout elements, default width is 80% with 10% margin on each side</li>
+    <li>.row - container for layout elements (use row within container and element widths within row)</li>
+    <li>.fl-left - float row elements to the left (or right with .fl-right) of the container (can also just be done more precisely with offsets)</li>
+    <li>.g-1 - general width class (g) for when you just want the same width (here 1 column) across all screens</li>
+    <li>.xs-5 - define element with width of 5 columns (1/6th) of the container element for extra small screen sizes</li>
+    <li>.m-qu - define element with width of 1 quarter the size of the container element for medium screen sizes</li>
+    <li>.off-l-4 - define offset width of element (4) for screen size (l can be used with all sizes including g)</li>
+  </ul>
+
+  <p>Some examples are shown below</p>
+  <section class="set">
+    <p class="title">Layout widths</p>
+    <!-- demonstrating layout widths -->
+    <div class="container">
+      <div class="row">
+        <div class="g-5">
+          <p>.g-5</p>
+        </div>
+        <div class="g-10">
+          <p>.g-10</p>
+        </div>
+        <div class="g-4">
+          <p>.g-4</p>
+        </div>
+        <div class="g-3">
+          <p>.g-3</p>
+        </div>
+        <div class="g-8">
+          <p>.g-8</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="set">
+    <p class="title">Layout widths with offsets</p>
+    <!-- demonstrating layout widths -->
+    <div class="container">
+      <div class="row">
+        <div class="g-5">
+          <p>.g-5</p>
+        </div>
+        <div class="off-g-2 g-7">
+          <p>.off-g-2 .g-7</p>
+        </div>
+        <div class="off-g-1 g-6">
+          <p>.off-g-1 .g-6</p>
+        </div>
+        <div class="off-g-4 g-5">
+          <p>.off-g-4 .g-5</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="set">
+    <p class="title">Responsive sizes using xs s m l and xl sizes</p>
+    <!-- demonstrating responsive layouts -->
+    <div class="container">
+      <div class="row">
+        <div class="xs-10 s-5 m-5 l-5 xl-5">
+          <p>.xs-10 .s-5 .m-5 .l-5 .xl-5</p>
+        </div>
+        <div class="xs-10 s-10 m-5 l-5 xl-15">
+          <p>.xs-10 .s-10 .m-5 .l-5 .xl-15</p>
+        </div>
+        <div class="xs-10 s-10 m-10 l-15 xl-5">
+          <p>.xs-10 .s-10 .m-10 .l-15 .xl-5</p>
+        </div>
+        <div class="xs-30 s-5 m-10 l-5 xl-5">
+          <p>.xs-30 .s-5 .m-10 .l-5 .xl-5</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
