@@ -1,6 +1,6 @@
 {
-  "name": "cool-stuff",
-  "version": "0.0.0",
+  "name": "Front End",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
