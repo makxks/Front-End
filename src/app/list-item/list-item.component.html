@@ -1,0 +1,27 @@
+<li [ngClass]="itemstyle" *ngIf="!hoverable && !isPartial">
+  {{itemname}} <span *ngIf="buttonStyle=='triangle'" class="triangle transformable-and-border-fast" (click)="toggleSubitems($event)"></span>
+<li>
+<ul [ngClass]="subliststyle" *ngIf="!hoverable && !isPartial">
+  <li [ngClass]="subitemstyle" *ngFor="let subitem of subitems; let i = index"  [attr.data-index]="i" [ngStyle]="{'z-index':-1-i}">{{subitem.itemname}}</li>
+</ul>
+
+<li [ngClass]="itemstyle" *ngIf="hoverable && !isPartial" (mouseenter)="toggleSubitemsHover($event)" (mouseleave)="toggleSubitemsHover($event)">
+  {{itemname}}
+<li>
+<ul [ngClass]="subliststyle" *ngIf="hoverable && !isPartial">
+  <li [ngClass]="subitemstyle" *ngFor="let subitem of subitems; let i = index"  [attr.data-index]="i" [ngStyle]="{'z-index':-1-i}">{{subitem.itemname}}</li>
+</ul>
+
+<li [ngClass]="itemstyle" *ngIf="!hoverable && isPartial">
+  {{itemname}} <span *ngIf="buttonStyle=='triangle'" class="triangle transformable-and-border-fast" (click)="toggleSubitemsPartial($event)"></span>
+<li>
+<ul [ngClass]="subliststyle" *ngIf="!hoverable && isPartial">
+  <li [ngClass]="subitemstyle" *ngFor="let subitem of subitems; let i = index"  [attr.data-index]="i" [ngStyle]="{'z-index':-1-i}">{{subitem.itemname}}</li>
+</ul>
+
+<li [ngClass]="itemstyle" *ngIf="hoverable && isPartial" (mouseenter)="toggleSubitemsHoverPartial($event)" (mouseleave)="toggleSubitemsHoverPartial($event)">
+  {{itemname}}
+<li>
+<ul [ngClass]="subliststyle" *ngIf="hoverable && isPartial">
+  <li [ngClass]="subitemstyle" *ngFor="let subitem of subitems; let i = index"  [attr.data-index]="i" [ngStyle]="{'z-index':-1-i}">{{subitem.itemname}}</li>
+</ul>

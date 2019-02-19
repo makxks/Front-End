@@ -1,6 +1,6 @@
 {
-  "name": "Front End",
-  "version": "0.0.2",
+  "name": "Front_End",
+  "version": "0.0.3",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

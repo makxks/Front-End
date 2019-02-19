@@ -28,6 +28,7 @@ import { LoadingStripesComponent } from './loading-stripes/loading-stripes.compo
 import { LoadingStripesSmoothComponent } from './loading-stripes-smooth/loading-stripes-smooth.component';
 import { LoadingBarComponent } from './loading-bar/loading-bar.component';
 import { LoadingSquaresComponent } from './loading-squares/loading-squares.component';
+import { ListItemComponent } from './list-item/list-item.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { LoadingSquaresComponent } from './loading-squares/loading-squares.compo
     LoadingStripesComponent,
     LoadingStripesSmoothComponent,
     LoadingBarComponent,
-    LoadingSquaresComponent
+    LoadingSquaresComponent,
+    ListItemComponent
   ],
   imports: [
     BrowserModule,

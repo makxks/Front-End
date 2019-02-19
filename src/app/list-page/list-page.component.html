@@ -7,9 +7,169 @@
 </p>
 
 <section id="lists">
+  <h3>List Styles</h3>
+
+  <p>Styles can be set for list-item components with the following @Inputs</p>
+  <ul>
+    <li>[itemname] - string, name of list item</li>
+    <li>[itemstyle] - string, 'list-item' and any other classes you wish to apply, here I have used 'b1-primary'</li>
+    <li>[hoverable] - boolean, if hoverable the sublist expands when hovered, otherwise a button is provided using the button style input</li>
+    <li>[buttonStyle] - string, triangle or circle, triangle rotates when clicked, circle goes from filled when unclicked to empty when clicked</li>
+    <li>[isPartial]* - boolean, if true shows the edges of the subitems below each item in the list</li>
+    <li>[subliststyle]* - string, list-subitems or list-partial-subitems if isPartial is true</li>
+    <li>[subitems] - array of subitems. Each subitem is simply a string to hold the subitem name</li>
+    <li>[subitemstyle] - string, 'list-subitem' and classes for styles of subitems, here I have used 'b1-neutral' and 'margin-moveable-opacity-medium' for smooth movement</li>
+  </ul>
+  <p>*These should match the style in the containing ul tag</p>
+  <p>e.g. if the ul class is "list-hideable" isPartial should be false and the subliststyle should be "list-subitems"</p>
+  <p>If the ul class is "list-partial-hideable" isPartial should be true and the subliststyle should be "list-partial-subitems"</p>
 
   <section class="set">
-    <p class="title"></p>
+    <p class="title">Button expandable list with hidden sub-items</p>
+
+    <section class="list-set">
+
+      <ul class="list-hideable">
+        <list-item
+          [itemname]="'List Item 1'"
+          [itemstyle]="'list-item b1-primary'"
+          [hoverable]="false"
+          [isPartial]="false"
+          [subliststyle]="'list-subitems'"
+          [subitems]="[
+          {itemname: 'Subitem 1-1'},
+          {itemname: 'Subitem 1-2'}
+          ]"
+          [subitemstyle]="'list-subitem b1-neutral margin-moveable-opacity-medium'"
+        ></list-item>
+        <list-item
+          [itemname]="'List Item 2'"
+          [itemstyle]="'list-item b1-primary'"
+          [hoverable]="false"
+          [isPartial]="false"
+          [subliststyle]="'list-subitems'"
+          [subitems]="[
+          {itemname: 'Subitem 2-1'},
+          {itemname: 'Subitem 2-2'}
+          ]"
+          [subitemstyle]="'list-subitem b1-neutral margin-moveable-opacity-medium'"
+        ></list-item>
+      </ul>
+
+    </section>
+
+  </section>
+
+  <section class="set">
+    <p class="title">Button expandable list with partially hidden sub-items</p>
+
+    <section class="list-set">
+
+      <ul class="list-partial-hideable">
+        <list-item
+          [itemname]="'List Item 1'"
+          [itemstyle]="'list-item b1-primary'"
+          [hoverable]="false"
+          [isPartial]="true"
+          [subliststyle]="'list-partial-subitems'"
+          [subitems]="[
+          {itemname: 'Subitem 1-1'},
+          {itemname: 'Subitem 1-2'},
+          {itemname: 'Subitem 1-3'},
+          {itemname: 'Subitem 1-4'},
+          {itemname: 'Subitem 1-5'}
+          ]"
+          [subitemstyle]="'list-subitem b1-neutral margin-moveable-opacity-medium'"
+        ></list-item>
+        <list-item
+          [itemname]="'List Item 2'"
+          [itemstyle]="'list-item b1-primary'"
+          [hoverable]="false"
+          [isPartial]="true"
+          [subliststyle]="'list-partial-subitems'"
+          [subitems]="[
+          {itemname: 'Subitem 2-1'},
+          {itemname: 'Subitem 2-2'}
+          ]"
+          [subitemstyle]="'list-subitem b1-neutral margin-moveable-opacity-medium'"
+        ></list-item>
+      </ul>
+
+    </section>
+
+  </section>
+
+  <section class="set">
+    <p class="title">Hoverable list with hidden sub-items</p>
+
+    <section class="list-set">
+
+      <ul class="list-hideable">
+        <list-item
+          [itemname]="'List Item 1'"
+          [itemstyle]="'list-item b1-primary'"
+          [hoverable]="true"
+          [isPartial]="false"
+          [subliststyle]="'list-subitems'"
+          [subitems]="[
+          {itemname: 'Subitem 1-1'},
+          {itemname: 'Subitem 1-2'},
+          {itemname: 'Subitem 1-3'}
+          ]"
+          [subitemstyle]="'list-subitem b1-neutral margin-moveable-opacity-medium'"
+        ></list-item>
+        <list-item
+          [itemname]="'List Item 2'"
+          [itemstyle]="'list-item b1-primary'"
+          [hoverable]="true"
+          [isPartial]="false"
+          [subliststyle]="'list-subitems'"
+          [subitems]="[
+          {itemname: 'Subitem 2-1'}
+          ]"
+          [subitemstyle]="'list-subitem b1-neutral margin-moveable-opacity-medium'"
+        ></list-item>
+      </ul>
+
+    </section>
+
+  </section>
+
+
+  <section class="set">
+    <p class="title">Hoverable list with partially hidden sub-items</p>
+
+    <section class="list-set">
+
+      <ul class="list-partial-hideable">
+        <list-item
+          [itemname]="'List Item 1'"
+          [itemstyle]="'list-item b1-primary'"
+          [hoverable]="true"
+          [isPartial]="true"
+          [subliststyle]="'list-partial-subitems'"
+          [subitems]="[
+          {itemname: 'Subitem 1-1'},
+          {itemname: 'Subitem 1-2'}
+          ]"
+          [subitemstyle]="'list-subitem b1-neutral margin-moveable-opacity-medium'"
+        ></list-item>
+        <list-item
+          [itemname]="'List Item 2'"
+          [itemstyle]="'list-item b1-primary'"
+          [hoverable]="true"
+          [isPartial]="true"
+          [subliststyle]="'list-partial-subitems'"
+          [subitems]="[
+          {itemname: 'Subitem 2-1'},
+          {itemname: 'Subitem 2-2'}
+          ]"
+          [subitemstyle]="'list-subitem b1-neutral margin-moveable-opacity-medium'"
+        ></list-item>
+      </ul>
+
+    </section>
+
   </section>
 
 </section>

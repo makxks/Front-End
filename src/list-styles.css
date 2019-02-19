@@ -1,0 +1,120 @@
+li, ul {
+  list-style-type: none;
+}
+
+list-item {
+  width: 80%;
+  margin-left: 15%;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+
+  border-left: 5px solid white;
+
+  float: right;
+
+  margin-right: 10px;
+  margin-top: 4px;
+}
+
+.triangle:hover {
+  border-left-color: grey;
+}
+
+.triangle:active {
+  border-left-color: white;
+}
+
+.rotated {
+  transform: rotate(90deg);
+}
+
+.circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.unclicked {
+  border: 10px solid black;
+}
+
+.clicked {
+  border: 1px solid black;
+}
+
+.list-hideable {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.list-hideable .list-subitems {
+  width: 100%;
+  margin-left: 0;
+  padding-left: 0;
+  z-index: -5;
+}
+
+.list-hideable .list-item {
+  z-index: 1;
+}
+
+.list-hideable .list-item, .list-hideable .list-subitem {
+  list-style: none;
+  width: 80%;
+  height: 25px;
+  border-radius: 10px;
+  border: solid black 1px;
+  padding-top: 5px;
+}
+
+.list-hideable .list-subitems .list-subitem {
+  position: relative;
+  float: right;
+  z-index: -5;
+  margin-top: -32px;
+  width: 60%;
+  margin-right: 20%;
+}
+
+.list-partial-hideable {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.list-partial-hideable .list-partial-subitems {
+  width: 80%;
+  margin-left: 0;
+  padding-left: 0;
+  z-index: -5;
+}
+
+.list-partial-hideable .list-item {
+  z-index: 5;
+}
+
+.list-partial-hideable .list-item, .list-partial-hideable .list-subitem {
+  list-style: none;
+  width: 80%;
+  height: 25px;
+  border-radius: 10px;
+  border: solid black 1px;
+  padding-top: 5px;
+  position: relative;
+}
+
+.list-partial-hideable .list-partial-subitems .list-subitem {
+  position: relative;
+  float: right;
+  margin-top: -25px;
+}
