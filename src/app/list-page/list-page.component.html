@@ -3,18 +3,19 @@
 <hr />
 
 <p>
-  A collection of CSS and Javascript list and list effect designs.
+  A collection of CSS and Javascript list and list effect designs. All these lists are built from the list-styles <a href="https://github.com/makxks/Front-End/blob/master/src/list-styles.css">here</a> and the <a href="https://github.com/makxks/Front-End/tree/master/src/app/list-item">list-item component</a>.
 </p>
 
 <section id="lists">
   <h3>List Styles</h3>
 
-  <p>Styles can be set for list-item components with the following @Inputs</p>
+  <p>Styles can be set for the list-item component with the following @Inputs</p>
   <ul>
     <li>[itemname] - string, name of list item</li>
     <li>[itemstyle] - string, 'list-item' and any other classes you wish to apply, here I have used 'b1-primary'</li>
     <li>[hoverable] - boolean, if hoverable the sublist expands when hovered, otherwise a button is provided using the button style input</li>
-    <li>[buttonStyle] - string, triangle or circle, triangle rotates when clicked, circle goes from filled when unclicked to empty when clicked</li>
+    <li>[buttonTriangle] - boolean, the clickable button to expand the sublist is a triangle</li>
+    <li>[buttonCircle] - boolean, the clickable button to expand the sublist is a circle. For both the circle and the triangle button the default is false so only one need be specified as true</li>
     <li>[isPartial]* - boolean, if true shows the edges of the subitems below each item in the list</li>
     <li>[subliststyle]* - string, list-subitems or list-partial-subitems if isPartial is true</li>
     <li>[subitems] - array of subitems. Each subitem is simply a string to hold the subitem name</li>
@@ -25,7 +26,7 @@
   <p>If the ul class is "list-partial-hideable" isPartial should be true and the subliststyle should be "list-partial-subitems"</p>
 
   <section class="set">
-    <p class="title">Button expandable list with hidden sub-items</p>
+    <p class="title">Button expandable list with hidden sub-items and triangle button</p>
 
     <section class="list-set">
 
@@ -35,6 +36,7 @@
           [itemstyle]="'list-item b1-primary'"
           [hoverable]="false"
           [isPartial]="false"
+          [buttonTriangle]="true"
           [subliststyle]="'list-subitems'"
           [subitems]="[
           {itemname: 'Subitem 1-1'},
@@ -47,6 +49,7 @@
           [itemstyle]="'list-item b1-primary'"
           [hoverable]="false"
           [isPartial]="false"
+          [buttonTriangle]="true"
           [subliststyle]="'list-subitems'"
           [subitems]="[
           {itemname: 'Subitem 2-1'},
@@ -61,7 +64,7 @@
   </section>
 
   <section class="set">
-    <p class="title">Button expandable list with partially hidden sub-items</p>
+    <p class="title">Button expandable list with partially hidden sub-items and circular button</p>
 
     <section class="list-set">
 
@@ -71,6 +74,7 @@
           [itemstyle]="'list-item b1-primary'"
           [hoverable]="false"
           [isPartial]="true"
+          [buttonCircle]="true"
           [subliststyle]="'list-partial-subitems'"
           [subitems]="[
           {itemname: 'Subitem 1-1'},
@@ -86,6 +90,7 @@
           [itemstyle]="'list-item b1-primary'"
           [hoverable]="false"
           [isPartial]="true"
+          [buttonCircle]="true"
           [subliststyle]="'list-partial-subitems'"
           [subitems]="[
           {itemname: 'Subitem 2-1'},

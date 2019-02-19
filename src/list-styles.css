@@ -34,17 +34,12 @@ list-item {
 }
 
 .circle {
-  width: 16px;
-  height: 16px;
   border-radius: 50%;
-}
-
-.unclicked {
-  border: 10px solid black;
-}
-
-.clicked {
-  border: 1px solid black;
+  float: right;
+  margin-right: 4px;
+  width: 0px;
+  height: 0px;
+  border: 10px solid white;
 }
 
 .list-hideable {

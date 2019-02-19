@@ -13,7 +13,8 @@ export class ListItemComponent implements OnInit {
   @Input() subitemstyle: string = "";
   @Input() hoverable: boolean = false;
   @Input() isPartial: boolean = false;
-  @Input() buttonStyle: string = "triangle";
+  @Input() buttonTriangle: boolean = false;
+  @Input() buttonCircle: boolean = false;
 
   constructor() { }
 
@@ -27,11 +28,25 @@ export class ListItemComponent implements OnInit {
     if(subitems.length > 0){
       if(subitems[0].style.marginTop == marginTop){
         target = "-32px";
-        event.target.style.transform = "rotate(0deg)";
+        if(this.buttonTriangle){
+          event.target.style.transform = "rotate(0deg)";
+        }
+        else if(this.buttonCircle){
+          event.target.style.borderWidth = "10px";
+          event.target.style.width = "0";
+          event.target.style.height = "0";
+        }
       }
       else {
         target = "0";
-        event.target.style.transform = "rotate(90deg)";
+        if(this.buttonTriangle){
+          event.target.style.transform = "rotate(90deg)";
+        }
+        else if(this.buttonCircle){
+          event.target.style.borderWidth = "1px";
+          event.target.style.width = "20px";
+          event.target.style.height = "20px";
+        }
       }
     }
     for(var i=0; i<subitems.length; i++){
@@ -46,11 +61,25 @@ export class ListItemComponent implements OnInit {
     if(subitems.length > 0){
       if(subitems[0].style.marginTop == marginTop){
         target = "-25px";
-        event.target.style.transform = "rotate(0deg)";
+        if(this.buttonTriangle){
+          event.target.style.transform = "rotate(0deg)";
+        }
+        else if(this.buttonCircle){
+          event.target.style.borderWidth = "10px";
+          event.target.style.width = "0px";
+          event.target.style.height = "0px";
+        }
       }
       else {
         target = "0";
-        event.target.style.transform = "rotate(90deg)";
+        if(this.buttonTriangle){
+          event.target.style.transform = "rotate(90deg)";
+        }
+        else if(this.buttonCircle){
+          event.target.style.borderWidth = "1px";
+          event.target.style.width = "20px";
+          event.target.style.height = "20px";
+        }
       }
     }
     for(var i=0; i<subitems.length; i++){
