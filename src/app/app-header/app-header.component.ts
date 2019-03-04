@@ -9,7 +9,7 @@ import { AppService } from '../app.service';
 })
 export class AppHeaderComponent implements OnInit {
 
-  constructor(private appService: AppService) { }
+  constructor(public appService: AppService) { }
 
   ngOnInit() {
   }
