@@ -43,6 +43,11 @@ p {
   color: #e3e3e3;
 }
 
+.dark app-header #header {
+  background-color: #05376f;
+  color: #e3e3e3;
+}
+
 .dark .b3 {
   color: #e3e3e3;
 }
