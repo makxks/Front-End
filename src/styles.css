@@ -72,6 +72,6 @@ p {
   background-color: #333;
 }
 
-.dark .layouts .container .row p {
+.dark #layouts .container .row p {
   color: black;
 }

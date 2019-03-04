@@ -32,6 +32,6 @@ export const slideInAnimation =
           animate('500ms ease-out', style({ top: '0', opacity: '1'}))
         ], { optional: true })
       ]),
-      query(':enter', animateChild()),
+      query(':enter', animateChild(), { optional: true }),
     ])
   ]);
