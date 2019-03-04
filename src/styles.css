@@ -37,3 +37,32 @@ p {
 
   border-radius: 5px;
 }
+
+.dark {
+  background-color: #333;
+  color: #e3e3e3;
+}
+
+.dark .b3 {
+  color: #e3e3e3;
+}
+
+.dark a {
+  color: #70cae6;
+}
+
+.dark a:visited {
+  color: #a0cae6;
+}
+
+.dark a:hover {
+  color: #90daeb;
+}
+
+.dark a:active {
+  color: #aadfff;
+}
+
+.dark .loading-squares .loading-squares-small .loading-square-small {
+  background-color: #333;
+}

@@ -9,5 +9,6 @@
     <button mat-button [routerLink]="['/layout']">Layout</button>
     <button mat-button [routerLink]="['/list']">List</button>
     <button mat-button [routerLink]="['/nav']">Nav</button>
+    <button mat-button (click)="this.appService.switchTheme()">Switch Theme</button>
   </section>
 </section>
