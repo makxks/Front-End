@@ -71,3 +71,7 @@ p {
 .dark .loading-squares .loading-squares-small .loading-square-small {
   background-color: #333;
 }
+
+.dark .layouts .container .row p {
+  color: black;
+}
