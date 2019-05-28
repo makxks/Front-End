@@ -17,7 +17,7 @@
 <li [ngClass]="itemstyle" *ngIf="!hoverable && isPartial">
   {{itemname}}
   <span *ngIf="buttonTriangle" class="triangle transformable-and-border-fast" (click)="toggleSubitemsPartial($event)"></span>
-  <span *ngIf="buttonCircle" class="circle border-and-size-fast" (click)="toggleSubitems($event)"></span>
+  <span *ngIf="buttonCircle" class="circle border-and-size-fast" (click)="toggleSubitemsPartial($event)"></span>
 <li>
 <ul [ngClass]="subliststyle" *ngIf="!hoverable && isPartial">
   <li [ngClass]="subitemstyle" *ngFor="let subitem of subitems; let i = index"  [attr.data-index]="i" [ngStyle]="{'z-index':-1-i}">{{subitem.itemname}}</li>
